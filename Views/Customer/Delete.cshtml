@@ -1,0 +1,5 @@
+@model mvc4.Models.Customer
+@using(Html.BeginForm("Delete_Details","Customer")){
+    <p>Enter Customer Id to Delete : @Html.TextBoxFor(x=>x.Id)</p> 
+   <input type="submit">
+}

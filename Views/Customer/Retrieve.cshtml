@@ -1,0 +1,35 @@
+<style>
+    center{
+        border-color: brown;
+        border-radius: 8px;
+    }
+    table {
+        width: 100%; 
+        border-collapse: collapse; 
+        color:brown;    
+    }
+    th, td {
+        padding: 10px; 
+        border: 2px solid black;
+    }
+    h1{
+        color: brown;
+    }
+</style>
+<center>
+    <h1><u>Details Of All Customers</u></h1><br>
+    <table>
+        <tr>
+            <th>Customer_Id</th>
+            <th>Customer_Name</th>
+            <th>Customer_Orders</th>
+        </tr>
+            @foreach(var i in Model){
+                <tr>
+                    <td>@i.Id</td>
+                    <td>@i.Name</td>
+                    <td>@i.Orders</td>
+                </tr>
+            }
+    </table>
+</center>

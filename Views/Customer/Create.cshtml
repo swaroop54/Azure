@@ -1,0 +1,9 @@
+@model mvc4.Models.Customer
+
+@using(Html.BeginForm("Add_Details","Customer")){
+    @* <p>Customer Id : @Html.TextBoxFor(x=>x.Id)</p> *@
+    <p>Customer Id : @Html.TextBoxFor(x=>x.Id)</p>
+    <p>Customer Name : @Html.TextBoxFor(x=>x.Name)</p>
+    <p>Customer Order : @Html.TextBoxFor(x=>x.Orders)</p>
+   <input type="submit" value="submit">
+}

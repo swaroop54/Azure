@@ -1,0 +1,7 @@
+@model mvc4.Models.Customer
+@using(Html.BeginForm("Edit","Customer")){
+    <p>Enter Customer Id : @Html.TextBoxFor(x=>x.Id)</p>
+    @* <p>Update Customer Name : @Html.TextBoxFor(x=>x.Name)</p> *@
+    <p>Update Customer Orders : @Html.TextBoxFor(x=>x.Orders)</p>
+   <input type="submit">
+}
